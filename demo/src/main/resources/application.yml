@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: demo
+
+#  zipkin:
+#    base-url: http://localhost:9411
+#  sleuth:
+#    sampler:
+#      probability: 1.0
+#    web:
+#      client:
+#        enabled: true
+
+server:
+  port: 8003
+
+tx-lcn:
+  client:
+    manager-address: localhost:8070
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+  register-with-eureka: true
+  fetch-registry: true
+  enabled: true
+
+#feign已经依赖了hystrix，所以使用熔断不需要加依赖了
+#feign:
+#  hystrix:
+#    enabled: true

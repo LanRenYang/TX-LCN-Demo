@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.service.testservice.dao.TestDao">
+
+    <update id="test">
+        update test_a set name = 'ldkTest' where id = 1
+    </update>
+    
+
+</mapper>

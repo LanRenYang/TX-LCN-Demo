@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: eureka-demo
+  security:
+    user:
+      name: ldk
+      password: 1021
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    refresh-enable: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+server:
+  port: 8000
